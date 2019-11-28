@@ -2,18 +2,25 @@
   "core": {
     "workingDir": ".reg",
     "actualDir": "screenshot",
+    "thresholdRate": 0,
     "threshold": 0,
     "ximgdiff": {
       "invocationType": "client"
-    }
+    },
+    "addIgnore": true
   },
   "plugins": {
-    "reg-keygen-git-hash-plugin": true,
+    "reg-keygen-git-hash-plugin": {},
     "reg-notify-github-plugin": {
-      "clientId": "MzQ0tDAzNzIz0S9KTdctKC0oSC1JTS3STUnNzdc3MTA0gkiUZVYBAA=="
+      "clientId": "MzIyMTO3NDc00i9KTdctLs0s0S1JLS7RNzUxNTA3tNDPNUy0LLZMNAEA"
     },
     "reg-publish-s3-plugin": {
-      "bucketName": "reg-publish-bucket-2c260973-434b-4cc9-8e17-a14e72fd062c"
+      "bucketName": "your_s3_bucket_name"
+    }
+  },
+   "plugins": {
+    "reg-notify-github-plugin": {
+      "clientId": "MzIyMTO3NDc00i9KTdctLs0s0S1JLS7RNzUxNTA3tNDPNUy0LLZMNAEA"
     }
   }
 }
